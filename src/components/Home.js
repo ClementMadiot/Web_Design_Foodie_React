@@ -5,7 +5,7 @@ import { FiArrowRight } from 'react-icons/fi';
 
 const Home = () => {
   return (
-    <div className='home-container'>
+    <section id='home' className='home-container'>
       <Navbar/>
       <header className="home-banner-container">
         <div className="home-bannerImage-container">
@@ -24,7 +24,7 @@ const Home = () => {
           <img src={BannerImage} alt="Banner-food" />
         </div>
       </header>
-    </div>
+    </section>
   );
 };
 

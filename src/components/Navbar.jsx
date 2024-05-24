@@ -47,14 +47,14 @@ const Navbar = () => {
         <img src={Logo} alt="logo" />
       </div>
       <div className="navbar-links-container">
-        <a href="#about">About</a>
         <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
         <a href="#cart">
           <BsCart2 className="navbar-cart-icon" />
         </a>
-        <buton className="primary-button">Bookings Now</buton>
+        <button className="primary-button">Bookings Now</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
