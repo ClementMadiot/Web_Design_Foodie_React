@@ -15,13 +15,13 @@ const About = () => {
       </div>
       <div className="about-section-text-container">
         <p className="primary-subheading">About</p>
-        <h1 className="primary-heading">
+        <h2 className="primary-heading">
           Food Is An Important Part Of A balanced Diet
-        </h1>
-        <p className="prymary-text">
+        </h2>
+        <p className="primary-text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati voluptates eos itaque asperiores repellat sapiente, at laudantium eaque molestiae neque, omnis voluptate alias incidunt dicta mollitia voluptatibus ipsam nisi aliquam.
         </p>
-        <p className="prymary-text">
+        <p className="primary-text">
           Obcaecati voluptates eos itaque asperiores repellat sapiente, at laudantium eaque molestiae neque, omnis voluptate alias incidunt dicta mollitia voluptatibus ipsam nisi aliquam.
         </p>
         <div className="about-buttons-container">
