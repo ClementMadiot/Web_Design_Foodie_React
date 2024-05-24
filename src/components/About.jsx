@@ -1,6 +1,7 @@
-import React from 'react';
+// import img 
 import AboutBgd from '../assets/images/about-background.png'
 import AboutBgdImg from '../assets/images/about-background-image.png'
+// import icon 
 import { BsFillPlayCircleFill } from 'react-icons/bs';
 
 const About = () => {

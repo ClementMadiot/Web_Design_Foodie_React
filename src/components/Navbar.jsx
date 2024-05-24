@@ -6,11 +6,11 @@ import {
   Box,
   Drawer,
   List,
-  ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
 } from '@mui/material'
+// import icon 
 import HomeIcon from '@mui/icons-material/Home'
 import InfoIcon from '@mui/icons-material/Info'
 import CommentRoundedIcon from '@mui/icons-material/CommentRounded'
@@ -48,10 +48,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <a href="#about">About</a>
-        <a href="">Home</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
+        <a href="#home">Home</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#cart">
           <BsCart2 className="navbar-cart-icon" />
         </a>
         <buton className="primary-button">Bookings Now</buton>
