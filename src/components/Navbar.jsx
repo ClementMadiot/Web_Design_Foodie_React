@@ -10,7 +10,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material'
-// import icon 
+// import icon
 import HomeIcon from '@mui/icons-material/Home'
 import InfoIcon from '@mui/icons-material/Info'
 import CommentRoundedIcon from '@mui/icons-material/CommentRounded'
@@ -21,23 +21,28 @@ const Navbar = () => {
   const menuOptions = [
     {
       text: 'Home',
+      textTg:'Home',
       icon: <HomeIcon />,
     },
     {
       text: 'About',
+      textTg:'About',
       icon: <InfoIcon />,
     },
     {
       text: 'Testimonials',
+      textTg:'Testimonials',
       icon: <CommentRoundedIcon />,
     },
     {
       text: 'Contact',
+      textTg:'Contact',
       icon: <PhoneRoundedIcon />,
     },
     {
-      text: 'Cart',
-      icon: <ShoppingCartRoundedIcon />,
+      text: <BsCart2 className="navbar-cart-icon" />,
+      textTg:'Cart',
+      icon: <ShoppingCartRoundedIcon />
     },
   ]
 
@@ -47,13 +52,11 @@ const Navbar = () => {
         <img src={Logo} alt="logo" />
       </div>
       <div className="navbar-links-container">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-        <a href="#cart">
-          <BsCart2 className="navbar-cart-icon" />
+        {menuOptions.map((item) => (
+          <a key={item.text} href={`#${item.text}`}>
+          {item.text}
         </a>
+        ))}
         <button>Bookings Now</button>
       </div>
       <div className="navbar-menu-container">
@@ -68,9 +71,9 @@ const Navbar = () => {
         >
           <List>
             {menuOptions.map((item) => (
-              <ListItemButton>
+              <ListItemButton key={item.text}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
-                <ListItemText primary={item.text} />
+                <ListItemText primary={item.textTg} />
               </ListItemButton>
             ))}
           </List>

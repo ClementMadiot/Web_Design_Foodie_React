@@ -3,28 +3,26 @@ import { AiFillStar } from 'react-icons/ai'
 
 const Testimonials = () => {
   return (
-    <section id='testimonials' className="work-section-wrapper">
-      <div className="work-section-top">
-        <p className="primary-subheading">Testimonal</p>
-        <h2 className="primary-heading">What They Are Saying</h2>
-        <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+    <section id="Testimonials">
+      <div className="section-title">
+        <h3>Testimonal</h3>
+        <h2>What They Are Saying</h2>
+        <p>
+        Bellow you'll find feedback from our satisfied customers who have experienced the benefits of our services firsthand. 
         </p>
-        <div className="testimonial-section-bottom">
+        <div className="testimonial-card">
           <img src={ProfilePic} alt="John Doe" />
           <p>
-            Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-            elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          I absolutely love Foodie! The variety and quality are exceptional. Fast delivery ensures my meals are always fresh. Highly recommend!
           </p>
           <div className="testimonials-stars-container">
-            <AiFillStar/>
-            <AiFillStar/>
-            <AiFillStar/>
-            <AiFillStar/>
-            <AiFillStar/>
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
           </div>
-          <h2>John Doe</h2>
+          <h4>John Doe</h4>
         </div>
       </div>
     </section>

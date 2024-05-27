@@ -1,36 +1,38 @@
-// import img 
+// import img
 import AboutBgd from '../assets/images/about-background.png'
 import AboutBgdImg from '../assets/images/about-background-image.png'
-// import icon 
-import { BsFillPlayCircleFill } from 'react-icons/bs';
+// import icon
+import { BsFillPlayCircleFill } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <section id='about' className='about-section-container'>
-      <div className="about-background-image-container">
+    <section id="About" className="about-section">
+      <div className="about-banner-img">
         <img src={AboutBgd} alt="background-about" />
       </div>
-      <div className="about-section-image-container">
+      <div className="about-img">
         <img src={AboutBgdImg} alt="background-about-2" />
       </div>
-      <div className="about-section-text-container">
-        <p className="primary-subheading">About</p>
-        <h2 className="primary-heading">
+      <div className="about-text">
+        <h3>About</h3>
+        <h2>
           Food Is An Important Part Of A balanced Diet
         </h2>
-        <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati voluptates eos itaque asperiores repellat sapiente, at laudantium eaque molestiae neque, omnis voluptate alias incidunt dicta mollitia voluptatibus ipsam nisi aliquam.
+        <p>
+        Food is crucial for a balanced diet, providing essential nutrients like vitamins, minerals, and proteins. A variety of foods from all major groups ensures optimal energy, growth, and overall health.
         </p>
-        <p className="primary-text">
-          Obcaecati voluptates eos itaque asperiores repellat sapiente, at laudantium eaque molestiae neque, omnis voluptate alias incidunt dicta mollitia voluptatibus ipsam nisi aliquam.
+        <p>
+        Beyond nutrition, food impacts mental and emotional health. Balanced meals stabilize mood and energy, while certain foods support brain health. Sharing meals fosters community and emotional well-being, enhancing overall lifestyle.
         </p>
-        <div className="about-buttons-container">
-          <button className="secondary-button">Learn More</button>
-          <button className='watch-video-button'><BsFillPlayCircleFill/> Watch Video</button>
+        <div className="about-btn">
+          <button className="secondary-btn">Learn More</button>
+          <button className="watch-video-btn">
+            <BsFillPlayCircleFill /> Watch Video
+          </button>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

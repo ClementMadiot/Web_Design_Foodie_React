@@ -1,18 +1,14 @@
-
-
 const Contact = () => {
   return (
-    <section id="contact" className="contact-page-wrapper">
-      <h2 className="primary-heading">Have Question In Mind?</h2>
-      <h3 className="primary-heading">Let Us Help You</h3>
-      <form action="submit" className="contact-form-container">
+    <section id="Contact" className="contact-section">
+      <h2>Have Question In Mind?</h2>
+      <h2>Let Us Help You !</h2>
+      <form action="submit">
         <input type="text" placeholder="yourmail@gmail.com" />
-        <button className="secondary-button">Submit</button>
+        <button className="secondary-btn">Submit</button>
       </form>
-
-      
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

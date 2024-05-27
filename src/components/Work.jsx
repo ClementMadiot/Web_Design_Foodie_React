@@ -8,37 +8,35 @@ const Work = () => {
     {
       image: PickMeaks,
       title: 'Pick Meals',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt porro similique. Officia molestias quam fuga ducimus, sed ipsum.',
+      text: 'Browse our curated menu and select from a wide variety of delicious, nutritious meals, ensuring you always have satisfying and healthy choices.',
     },
     {
       image: ChooseMeals,
       title: 'Choose How Often',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+      text: 'Flexibility is key, so we let you choose how often you want your meals delivered. We adapt to your schedule to keep your pantry stocked with fresh meals.',
     },
     {
       image: DeliveryMeals,
       title: 'Fast Deliveries',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sunt porro similique.',
+      text: ' Enjoy the convenience of fast, our efficient delivery system ensures your meals arrive promptly, preserving their freshness and quality.',
     },
   ]
   return (
-    <section className="work-section-wrapper">
-      <article className="work-section-top">
-        <p className="primary-subheading">Work</p>
-        <h2 className="primary-heading">How It Works</h2>
-        <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-          temporibus dicta ipsa voluptatibus aliquam pariatur eum? Quo
-          repudiandae
+    <section>
+      <article className="section-title">
+        <h3>Work</h3>
+        <h2>How It Works</h2>
+        <p>
+        A balanced diet works by providing essential nutrients from diverse food groups, supporting overall physical and mental health.
         </p>
       </article>
-      <article className="work-section-bottom">
+      <article className="work-card-container">
         {workInfoData.map((data) => (
-          <div className="work-section-info" key={data.title}>
-            <div className="info-boxes-img-container">
+          <div className="work-card-info" key={data.title}>
+            <div className="work-card-info-img">
               <img src={data.image} alt={data.image} />
             </div>
-            <h2>{data.title}</h2>
+            <h4>{data.title}</h4>
             <p>{data.text}</p>
           </div>
         ))}
