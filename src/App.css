@@ -448,7 +448,7 @@ footer {
   }
   h4 {
     font-size: 1.6rem;
-    min-width: none;
+    min-width: unset;
   }
   .home-banner-img,
   .about-banner-img {
