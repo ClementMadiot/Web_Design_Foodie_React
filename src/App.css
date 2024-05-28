@@ -406,6 +406,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
+    margin-left: unset;
   }
   .secondary-btn {
     padding: 0.8rem 2rem;

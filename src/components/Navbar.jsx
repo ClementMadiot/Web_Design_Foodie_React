@@ -71,7 +71,7 @@ const Navbar = () => {
         >
           <List>
             {menuOptions.map((item) => (
-              <ListItemButton key={item.text}>
+              <ListItemButton href={`#${item.text}`} key={item.text}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.textTg} />
               </ListItemButton>
