@@ -1,7 +1,7 @@
 # Create React App
 Foodie is a Landing Page restaurant using "React"
 
-## Librairy Used :
+## Library Used :
 
 ### React Icons
 At the Mobil breakpoint I use the icon as a link in my sidebar
