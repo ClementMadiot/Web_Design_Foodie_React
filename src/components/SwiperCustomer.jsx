@@ -10,7 +10,7 @@ import { AiFillStar } from 'react-icons/ai'
 SwiperCore.use([Navigation, Pagination])
 
 export default function SwiperCustomer() {
-  const styleWHite = { color: '#6a6a6a' }
+  const styleWHite = { color: '#999999' }
 
   const testimonialArray = [
     {
@@ -55,15 +55,17 @@ export default function SwiperCustomer() {
   ]
 
   return (
-    <Swiper
+    <Swiper style={{
+      "--swiper-pagination-color": "#fe9e0d",
+      "--swiper-pagination-bullet-size": "11px",
+      "--swiper-pagination-bullet-horizontal-gap": "4px",
+      // "--swiper-pagination-bullet-inactive-color": "#999999",
+      // "--swiper-pagination-bullet-inactive-opacity": "1",
+    }}
+    
       id="swiper"
       loop={true}
       slidesPerView={1}
-      // onReachEnd={() => {
-      //   console.log('reach end')
-      //   const tmp = testimonialArray.unshift()
-      //   testimonialArray.push(tmp)
-      // }}
       navigation
       pagination={{
         clickable: true,

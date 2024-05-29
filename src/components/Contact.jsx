@@ -4,7 +4,7 @@ const Contact = () => {
       <h2>Have Question In Mind?</h2>
       <h2>Let Us Help You !</h2>
       <form action="submit">
-        <input type="text" placeholder="yourmail@gmail.com" />
+        <input type="text" placeholder="mail@gmail.com" />
         <button className="secondary-btn">Submit</button>
       </form>
     </section>
