@@ -4,7 +4,9 @@ import SwiperCore from 'swiper/core'
 import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/swiper-bundle.css'
 // Import Photo + icon
-import ProfilePic from '../assets/images/john-doe-image.png'
+import Client from '../assets/images/john-doe-image.png'
+import Client2 from '../assets/images/sarah.jpg'
+import Client3 from '../assets/images/lilia-greyart.jpg'
 import { AiFillStar } from 'react-icons/ai'
 
 SwiperCore.use([Navigation, Pagination])
@@ -15,7 +17,7 @@ export default function SwiperCustomer() {
   const testimonialArray = [
     {
       id: 'C1',
-      img: ProfilePic,
+      img: Client,
       desc: `I absolutely love Foodie! The variety and quality are exceptional. Fast delivery ensures my meals are always fresh. Highly recommend!`,
       name: `John Doe`,
       stars: [
@@ -28,9 +30,9 @@ export default function SwiperCustomer() {
     },
     {
       id: 'C2',
-      img: ProfilePic,
-      desc: `lorem2 What They Are Saying`,
-      name: `Bob Lelone`,
+      img: Client2,
+      desc: `With Healthy Switcher, I can enjoy nutritious, home-cooked meals without the hassle. The prepped ingredients save me so much time. It's a game-changer for my diet and lifestyle!`,
+      name: `Sarah Lelone`,
       stars: [
         <AiFillStar key='AA1'/>,
         <AiFillStar key='AA2' />,
@@ -41,9 +43,9 @@ export default function SwiperCustomer() {
     },
     {
       id: 'C3',
-      img: ProfilePic,
-      desc: `Bellow you'll find feedback from our satisfied customers who have experienced the benefits of our services firsthand.`,
-      name: `Jean-Paul Belmondo`,
+      img: Client3,
+      desc: `"Healthy Switcher has completely transformed the way I eat. The convenience of having prepped ingredients ready to cook has made it easy to stick to a balanced diet.`,
+      name: `Lilia Greyart`,
       stars: [
         <AiFillStar key='AAA1'/>,
         <AiFillStar key='AAA2' />,
