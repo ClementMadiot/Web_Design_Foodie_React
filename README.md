@@ -1,5 +1,5 @@
 # Create React App
-Foodie is a Landing Page restaurant using "React"
+Foodie is a fully responsive landing page using Javascript, It's a deliveries restaurant who proposes healthy food
 
 ## Library Used :
 
